@@ -1,26 +1,17 @@
 <h2 align="center">
-  A Studio Zed project made with React Js<br/>
+  This is my personal website made with React Js based on the tamplate I created for the <a href="https://studiozed.netlify.app/" target="_blank">Studio Zed website.</a><br/>
   Feel free to use it as a template for your own projects!<br/>
-  <a href="https://studiozed.netlify.app/" target="_blank">Visit Studio Zed!</a>
   
   [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 </h2>
 
 <br/>
 
-<h3 align="center">
-    <span className="wave" role="img" aria-labelledby="wave">
-                  👋🏻
-    <a href="https://github.com/OudomMunint/StudioZed-ReactJS/issues">Report Bug</a> &nbsp; &nbsp;
-</h3>
-
 ### Maintenance:
-![maintenance-status](https://img.shields.io/badge/maintenance-passively--maintained-yellowgreen.svg)
+![maintenance-status](https://img.shields.io/badge/maintenance-actively--developed-brightgreen.svg)
 
-### Deploy status:
-[![Netlify Status](https://api.netlify.com/api/v1/badges/90886fb8-9a2a-4a28-b66e-6c38af5d8ce9/deploy-status)](https://app.netlify.com/sites/studiozed/deploys)
-[![CodeQL](https://github.com/OudomMunint/StudioZed-ReactJS/actions/workflows/github-code-scanning/codeql/badge.svg?branch=main)](https://github.com/OudomMunint/StudioZed-ReactJS/actions/workflows/github-code-scanning/codeql)
-[![PROD Build + Release](https://github.com/OudomMunint/StudioZed-ReactJS/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/OudomMunint/StudioZed-ReactJS/actions/workflows/main.yml)
+### Pipelines:
+To be added.
 
 ## Tech Stack
 This project was built using these technologies.
@@ -53,29 +44,11 @@ This project was built using these technologies.
 - From the terminal, you can see the local address & network address to view the build, copy and paste it in your browser.
 
 ## Running tests
-- Run `npm run test` to run tests.
-- There are 1 test suite and 5 tests in total.
-- Testing setup can be found in `setupTests.js` & all tests are in `App.test.js`.
-- Tests are written using Jest & React Testing Library.
-- All 5 Tests are currently integrated into the `CI/CD` pipeline.
-- Example of test output:
-```bash
-  PASS  src/App.test.js
-  √ Test home page content (525 ms)
-  √ Find contact form (156 ms)                                                                
-  √ Find form submit button (38 ms)                                                            
-  √ Test web vitals (2 ms)                                                                 
-  √ Test AboutPage (30 ms)                                                                      
+To be added.
 
-Test Suites: 1 passed, 1 total                                                                   
-Tests:       5 passed, 5 total                                                               
-Snapshots:   0 total
-Time:        4.137 s
-  ```
 ## Forms
 - The implementation of the contact form is integrated with `Netlify forms`.
 - Learn how to set up `Netlify forms` [here](https://docs.netlify.com/forms/setup/).
 
 ## Known Issues
-- Security issues found in dependencies but are low risk to this project, See dependabot alert [#26](https://github.com/OudomMunint/StudioZed-ReactJS/security/dependabot/26),  alert [#12](https://github.com/OudomMunint/StudioZed-ReactJS/security/dependabot/12).
-- For more information, see the [Security Tab](https://github.com/OudomMunint/StudioZed-ReactJS/security/dependabot).
+- Security issues found in dependencies but are low risk to this project, For more information, see the [Security Tab](https://github.com/OudomMunint/StudioZed-ReactJS/security/dependabot).
