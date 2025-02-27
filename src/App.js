@@ -6,6 +6,7 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import ContactForm from "./components/Contact";
+import PdfView from "./components/PdfView";
 //import Contact from "./components/ContactForm";
 import {
   BrowserRouter as Router,
@@ -41,6 +42,7 @@ function App() {
           <Route path="/project" element={<Projects />} />
           <Route path="/about" element={<About />} />
           <Route path="/Contact" element={<ContactForm/>} />
+          <Route path="/resume" element={<PdfView />} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
         <Footer />
