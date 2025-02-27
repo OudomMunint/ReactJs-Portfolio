@@ -46,7 +46,8 @@ html {
   /* margin-bottom: 27px; */
   /* background: linear-gradient( to bottom left, rgba(0, 0, 0, 0.678), rgba(255,192,203, 0.200), rgba(22, 17, 37, 0.863) ); */
   /* background: linear-gradient(to top, #30cfd0 -50%, #330867 100%); */
-  background-color: rgb(227, 227, 227);
+  /* background-color: rgb(205 205 205); */
+  background-color: rgb(205 205 205);
   /* background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%); */
   /* background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%); */
   /* background-image: linear-gradient(to bottom, #9795f0 0%, #fbc8d4 100%); */
@@ -351,7 +352,7 @@ a {
 
 .heading {
   font-size: 2.4em !important;
-  padding-left: 50px !important;
+  padding-left: 45px !important;
 }
 
 .heading-name {
@@ -544,7 +545,7 @@ a {
   padding-top: 150px !important;
   padding-bottom: 30px !important;
   /* background-image: var(--section-background-color) !important; */
-  background-color: rgb(227, 227, 227);
+  background-color: rgb(205 205 205);
 }
 
 .dark-mode .project-section {
@@ -562,7 +563,7 @@ a {
 .project-card-view {
   /* box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important; */
   color: black !important;
-  /* background-color: rgb(227, 227, 227) !important; */
+  /* background-color: rgb(205 205 205) !important; */
   background-color: white !important;
   opacity: 1 !important;
   transition: all 0.5s ease 0s !important;
@@ -614,7 +615,7 @@ a {
 .card-img-top {
   padding: 20px !important;
   /* opacity: 0.8 !important; */
-  border-radius: 50px !important;
+  border-radius: 35px !important;
 }
 
 .card-body {
@@ -702,7 +703,7 @@ a {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
-  background-color: rgb(227, 227, 227);
+  background-color: rgb(205 205 205);
   color: rgb(0, 0, 0) !important;
 }
 
@@ -1051,7 +1052,7 @@ textarea {
 }
 
 .slider {
-  background-color: #ccc;
+  background-color: darkgray;
   position: absolute;
   cursor: pointer;
   bottom: 0;
@@ -1128,4 +1129,19 @@ input:checked + .slider {
   .triggerSpan {
     font-size: 3rem;
   } */
+}
+
+.icon-colour-normal {
+  color: black;
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
+
+.dark-mode .icon-colour-normal {
+  color: white;
+}
+
+.icon-colour-normal:hover {
+  color: #08d;
+  transform: scale(1.1);
 }
