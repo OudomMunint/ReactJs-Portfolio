@@ -5,7 +5,6 @@ import Home2 from "../Home/Home2"
 import { Container } from "react-bootstrap";
 
 // import { Row, Col } from "react-bootstrap";
-// import Github from "./Github";
 // import Aboutcard from "./AboutCard";
 // import laptopImg from "../../Assets/about.png";
 // import Toolstack from "./Toolstack";
@@ -26,14 +25,12 @@ function About() {
     <Container fluid className="about-section">
       <Particle />
       <Container>
-      <Home2/>
-        <h1 className="project-heading">
-          Who we <strong className="purple">work with </strong>
-        </h1>
+        <Home2/>
+          <h1 className="project-heading">
+            What I've <strong className="purple">worked with </strong>
+          </h1>
 
         <Clients />
-
-        {/* <Github /> */}
       </Container>
     </Container>
     </section>
