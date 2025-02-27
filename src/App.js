@@ -4,7 +4,6 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
-import Footer from "./components/Footer";
 import ContactForm from "./components/Contact";
 import PdfView from "./components/PdfView";
 import ScrollToTop from "./components/ScrollToTop";
@@ -17,6 +16,7 @@ import {
   Routes,
   Navigate
 } from "react-router-dom";
+// import Footer from "./components/Footer";
 
 function App() {
   const [load, updateLoad] = useState(true);
@@ -43,7 +43,7 @@ function App() {
           <Route path="/resume" element={<PdfView />} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </Router>
   );
