@@ -58,18 +58,23 @@ function ScrollTrigger() {
           <div className="triggerDiv" tg-name="_" tg-ref="container" tg-from="1" tg-to="8" tg-step="1">
             <section tg-name="_" tg-map="1,2,3,4,5,6,7,8,9,10: 1">
               <span className="triggerSpan" tg-name="opacity" tg-filter="2!" tg-follow="container">
-              A University Of Newcastle Student Led Design Studio.
+              I am an experienced software engineer based in Newcastle, New South Wales Australia.
               </span>
               <br />
               <span className="triggerSpan" tg-name="opacity" tg-filter="3!" tg-follow="container">
-              We work together with communities, governments, universities and select start-up businesses
+              A graduate from the University of Newcastle, I have a passion for web and app development.
               </span> <br />
-              <span className="triggerSpan" tg-name="opacity" tg-filter="4!" tg-follow="container">
-              We work on large scale projects from illustration and graphic design through to campaigns and creative consultancy.
-              </span>
-              <br />
+              {/* <span className="triggerSpan" tg-name="opacity" tg-filter="4!" tg-follow="container">
+              I'm currently working at <a class="pds"href="https://www.pdsglobal.com/" target="_blank">
+              Productivity Developement Solutions</a> as a software engineer.
+              </span> */}
+              {/* <br /> */}
               <span className="triggerSpan" tg-name="opacity" tg-filter="5!" tg-follow="container">
-              Feel free to get in touch for an obligation free consultation. And everything from Aye! to Zed!
+              I have a passion for creating visually stunning and interactive websites and applications.
+              </span> <br />
+              <span className="triggerSpan" tg-name="opacity" tg-filter="6!" tg-follow="container">
+              I also have a keen interest in games development, computer graphics, PC hardware, and the latest
+              technologies in the world of computing.
               </span>
             </section>
           </div>
