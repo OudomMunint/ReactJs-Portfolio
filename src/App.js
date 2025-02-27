@@ -7,18 +7,16 @@ import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import ContactForm from "./components/Contact";
 import PdfView from "./components/PdfView";
-//import Contact from "./components/ContactForm";
+import ScrollToTop from "./components/ScrollToTop";
+import "./style.css";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import {
   BrowserRouter as Router,
   Route,
   Routes,
   Navigate
 } from "react-router-dom";
-import ScrollToTop from "./components/ScrollToTop";
-import "./style.css";
-import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-//import Home2 from "./components/Home/Home2";
 
 function App() {
   const [load, updateLoad] = useState(true);
