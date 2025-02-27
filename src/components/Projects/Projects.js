@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
-import Particle from "../Particle";
 import benchmark from "../../Assets/benchmark.png"
 import maui from "../../Assets/maui.png"
 import studioZed from "../../Assets/studiozed.png"
@@ -12,7 +11,6 @@ import unityPlatformer from "../../Assets/unity2d.png"
 function Projects() {
   return (
     <Container fluid className="project-section">
-      <Particle />
       <Container>
         <h1 className="project-heading">
           Some of my <strong className="main-name">Work </strong>

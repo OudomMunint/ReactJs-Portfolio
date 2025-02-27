@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Particle from "../Particle";
 import Type from "./Type";
 import Github from "../About/Github";
 import { CgFileDocument } from "react-icons/cg";
@@ -17,7 +16,6 @@ function Home() {
   return (
     <section className="HomeHeroSection">
       <Container fluid className="home-section" id="home">
-        <Particle />
         <Container className="home-content">
           <Row>
             <Col md={5} className="home-header">

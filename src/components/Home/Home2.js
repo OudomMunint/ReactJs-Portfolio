@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Student from "../../Assets/home-main.svg"
 import Tilt from "react-parallax-tilt";
-import ScrollTrigger from "../About/ScrollTrigger";
+import ScrollTrigger from "../ScrollTrigger";
 import { useMediaQuery } from "react-responsive";
 
 function Home2() {
