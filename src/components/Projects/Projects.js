@@ -2,21 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-/* import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png"; */
-import publicartworkers from "../../Assets/Projects/pubArt.png";
-import LocalConnect from "../../Assets/Projects/localConnections.png";
-import wanersbay from "../../Assets/Projects/WarnersBayKids.png";
-import newcastleArt from "../../Assets/Projects/newcastleArt.png";
-import water from "../../Assets/Projects/water.png";
-import JH from "../../Assets/Projects/JH.png";
-import tina from "../../Assets/Projects/tina.png";
-import noWorries from "../../Assets/Projects/noWorry.png"
-import air from "../../Assets/Projects/air.png"
+import benchmark from "../../Assets/benchmark.png"
+import maui from "../../Assets/maui.png"
+import studioZed from "../../Assets/studiozed.png"
+import tpsUnreal from "../../Assets/tps.png"
+import ogPortfolio from "../../Assets/ogwebsite.png"
+import unityPlatformer from "../../Assets/unity2d.png"
 
 function Projects() {
   return (
@@ -24,103 +15,92 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          Some of our <strong className="purple">Work </strong>
+          Some of my <strong className="main-name">Work </strong>
         </h1>
         <p>
-          Here are a few projects that we've worked on
+          Here are a few projects that I've worked on
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={42} className="project-card">
             <ProjectCard
-              imgPath={publicartworkers}
-              isBlog={false}
-              title="Public Art Workers website and branding"
-              description="A website, Logo and branding for a newly formed company called Public art workers."
-              //ghLink="https://github.com/"
-              demoLink="https://www.publicartworkers.com/"
+              imgPath={benchmark}
+              title="Hardware Info & Performance Benchmark"
+              description="A .NET Core 9.0 C# console app that displays system specs and runs performance benchmarks for CPU,
+                           memory, and IO. It tests integer performance (prime computation), floating-point (matrix multiplication),
+                           cryptographic (AES & hashing), memory (16GB dataset encryption), and multithreading.
+                           Results can be exported to a text file"
+              // ghLink="https://github.com/OudomMunint/Benchmark"
+              demoLink="https://github.com/OudomMunint/Benchmark"
             />
           </Col>
 
           <Col md={42} className="project-card">
             <ProjectCard
-              imgPath={JH}
-              isBlog={false}
-              title="John Hunter Health anniversary book"
-              //description="This project is about [Insert name] it is for [ inset ] by [inset] this project involved [ insert]"
+              imgPath={maui}
+              title="Check mate - .Net Maui to-do list app"
+              description="A minimalistic, performant, cross platform .NET MAUI application that performs CRUD operations and stores data locally
+                          with SQLite. This app features optional biometric authentication, a dashboard view with charts, camera & image gallery usage,
+                          ListView with bulk actions as well as dark & light themes."
+              demoLink="https://github.com/OudomMunint/.NetMAUI-To-Do-List-App"
             />
           </Col>
 
           <Col md={42} className="project-card">
             <ProjectCard
-              imgPath={LocalConnect}
-              isBlog={false}
-              title="Local Connections restuarant"
-              //description="This project is about [Insert name] it is for [ inset ] by [inset] this project involved [ insert]"         
+              imgPath={studioZed}
+              title="Studio Zed SPA website"
+              description="A React SPA template designed & developed for a design studio called Studio Zed. Feel free to contribute or use this for your
+                           own needs, this template is the base for the website you are currently viewing!"   
+              demoLink="https://studiozed.netlify.app/"
+              ghLink="https://github.com/OudomMunint/StudioZed-ReactJS"    
             />
           </Col>
 
           <Col md={42} className="project-card">
             <ProjectCard
-              imgPath={newcastleArt}
-              isBlog={false}
-              title="Newcastle art gallery"
-              //description="This project is about [Insert name] it is for [ inset ] by [inset] this project involved [ insert]"
+              imgPath={tpsUnreal}
+              title="UE5 third person shooter (still thinking of a name lol)"
+              description="A 3rd person shooter, this was a solo university assignment in Games design and development.
+                           Feel free to use it as a template for your own projects. This project features AI bots using Unreal's Perception system,
+                           a health system for both player & AI, a weapon system with shoulder switching aiming & reloading,
+                           a standard movement system, a scoring system with win/loss conditions and a robust menu system & HUDs."
+              demoLink="https://github.com/OudomMunint/Unreal-3rd-person-shooter-4.27"
             />
           </Col>
 
           <Col md={42} className="project-card">
             <ProjectCard
-              imgPath={wanersbay}
-              isBlog={false}
-              title="Warners Bay kids book"
-              //description="This project is about [Insert name] it is for [ inset ] by [inset] this project involved [ insert]"
+              imgPath={ogPortfolio}
+              title="Personal website"
+              description="A fun, responsive website made with HTML, JavaScript, bootstrap, SCSS and .JS libraries such as Scroll trigger, Scroll magic, GSAP.
+                           This website is a template created for my personal portfolio, It is the original website you are currently
+                           viewing before being ported to React. feel free to use it for your own needs!"
+              demoLink="https://oudommunint.netlify.app/"
+              ghLink="https://github.com/OudomMunint/Personal-Website"
             />
           </Col>
 
           <Col md={42} className="project-card">
             <ProjectCard
-              imgPath={water}
-              isBlog={false}
-              title="Water conservation kids book"
-              //description="This project is about [Insert name] it is for [ inset ] by [inset] this project involved [ insert]"
+              imgPath={unityPlatformer}
+              title="Unity 2D platformer game"
+              description="A 2D platformer game made in Unity with C# & .Net Framework 2.1. A short platformer game featuring 5 Levels with collectables,
+                           hazards, health system, checkpoints, a scoring system and proper win/loss conditions.
+                           Feel free to use it as a template or starting point."
+              demoLink="https://github.com/OudomMunint/Unity-2D-Platformer"
             />
           </Col>
 
-          <Col md={42} className="project-card">
-            <ProjectCard
-              imgPath={tina}
-              isBlog={false}
-              title="This Is Not Art Program"
-              //description="This project is about [Insert name] it is for [ inset ] by [inset] this project involved [ insert]"
-            />
-          </Col>
+          <h1 className="project-heading">
+            Visit my
+            <strong className="main-name">
+              <a href="https://github.com/OudomMunint?tab=repositories"
+                 target="_blank" 
+                 rel="noopener noreferrer"> Github </a>
+            </strong>
+            to see more projects that I've worked on!
+          </h1>
 
-          <Col md={42} className="project-card">
-            <ProjectCard
-              imgPath={noWorries}
-              isBlog={false}
-              title="No worries rebranding and website"
-              //description="This project is about [Insert name] it is for [ inset ] by [inset] this project involved [ insert]"
-            />
-          </Col>
-
-          <Col md={42} className="project-card">
-            <ProjectCard
-              imgPath={air}
-              isBlog={false}
-              title="Art in Recovery rebrading and commemorative book"
-              //description="This project is about [Insert name] it is for [ inset ] by [inset] this project involved [ insert]"
-            />
-          </Col>
-
-          {/* <Col md={42} className="project-card">
-            <ProjectCard
-              //imgPath={air}
-              isBlog={false}
-              title="Head 2 Art website and branding project"
-              description="This project is about [Insert name] it is for [ inset ] by [inset] this project involved [ insert]"
-            />
-          </Col> */}
         </Row>
       </Container>
     </Container>
