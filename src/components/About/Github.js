@@ -4,16 +4,19 @@ import { Row } from "react-bootstrap";
 
 function Github() {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-      <h1 className="project-heading" style={{ paddingBottom: "20px" }}>
-        My Github <strong className="purple">Contributions</strong>
+    <Row style={{paddingBottom: "10px", paddingLeft: "30px"}}>
+      <h1 style={{ paddingBottom: "25px" }}>
+        My Github <strong className="main-name">Contributions</strong>
       </h1>
       <GitHubCalendar
         username="OudomMunint"
-        blockSize={15}
+        blockSize={20}
         blockMargin={5}
-        color="#c084f5"
-        fontSize={16}
+        hideColorLegend={true}
+        fontSize={20}
+        showWeekdayLabels={false}
+        hideMonthLabels={true}     
+        hideTotalCount={true}
       />
     </Row>
   );
