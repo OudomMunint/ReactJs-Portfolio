@@ -22,8 +22,8 @@ function Home2() {
                   textAlign: "left",
                 }}
               >
-                A University Of Newcastle{" "}
-                <span className="purple"> Student Led </span> Design Studio.
+                I am an experienced software engineer based in{" "}
+                <span className="purple"> Newcastle, </span> New South Wales Australia.
               </h1>
               <p
                 className="home-about-body"
@@ -35,33 +35,27 @@ function Home2() {
               >
                 <br />
                 <br />
-                We work together with
+                A graduate from the University of Newcastle, I have a passion for
                 <i>
                   <b className="purple">
                     {" "}
-                    communities, governments, universities and select start-up
-                    businesses{" "}
+                    web and app development.{" "}
                   </b>
                 </i>
                 <br />
                 <br />
-                We work on large scale projects from&nbsp;
+                I have a passion for creating&nbsp;
                 <i>
-                  <b className="purple">llustration and graphic design </b>{" "}
-                  through to{" "}
-                  <b className="purple">campaigns and creative consultancy.</b>
+                  <b className="purple">visually stunning, interactive websites </b>{" "}
+                  and {" "}
+                  <b className="purple">cross platform applications.</b>
                 </i>
                 <br />
                 <br />
-                Feel free to get in touch for an{" "}
-                <b className="purple">obligation free consultation.</b> And
-                everything from
-                <i>
-                  <b className="purple"> Aye!</b>
-                </i>
-                &nbsp;to
-                <i>
-                  <b className="purple"> Zed!</b>
+                I also have a keen interest in{" "}
+                <b className="purple">games development, computer graphics, PC hardware,</b>
+                <i> and also the latest
+                  <b className="purple"> technologies in the world of computing</b>
                 </i>
               </p>
             </Col>
@@ -69,14 +63,12 @@ function Home2() {
 
           {!isLargeScreen && (
           <Col md={4} className="myAvtar">
-            <Tilt>
               <img
                 src={Student}
                 className="img-fluid"
                 alt="avatar"
                 style={{ minHeight: "450px" }}
               />
-            </Tilt>
           </Col>)}
 
           {isLargeScreen && <ScrollTrigger className="scroll-trigger" />}
