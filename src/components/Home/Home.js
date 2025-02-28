@@ -5,16 +5,23 @@ import Github from "../About/Github";
 import { CgFileDocument } from "react-icons/cg";
 import { AiFillGithub, AiFillLinkedin, } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+import Preloader from "../Pre";
 
 function Home() {
   const navigate = useNavigate();
+  const [load, setLoad] = useState(true); // State for tracking loading
 
+  const handleImageLoad = () => {
+    setLoad(false); // Hide preloader when images finish loading
+  };
   const goToResume = () => {
     navigate("/resume");
   };
 
   return (
     <section className="HomeHeroSection">
+    <Preloader load={load} /> {/* Show preloader while loading */}
       <Container fluid className="home-section" id="home">
         <Container className="home-content">
           <Row>
@@ -79,17 +86,19 @@ function Home() {
 
             <Col className="home-header" md={7} style={{ padding: 20 }}>
 
-              <Github/>
+              <Github onLoad={handleImageLoad}/>
 
               <div style={{display:"flex", alignItems:"center"}}> 
                 <a className="ma-2" href="https://github.com/anuraghazra/github-readme-stats">
                   <img align="center" alt="Oudom's Github Stats"
-                       src="https://github-readme-stats.vercel.app/api?username=oudommunint&show_icons=true&theme=transparent&hide_border=true&include_all_commits=false&rank_icon=percentile%&show=reviews,prs_merged,prs_merged_percentage&hide=contribs" />
+                       src="https://github-readme-stats.vercel.app/api?username=oudommunint&show_icons=true&theme=transparent&hide_border=true&include_all_commits=false&rank_icon=percentile%&show=reviews,prs_merged,prs_merged_percentage&hide=contribs"
+                       onLoad={handleImageLoad}/>
                 </a>
 
                 <a className="ma-2" href="https://github.com/anuraghazra/convoychat">
                   <img text-align="center" alt="Oudom's Top Languages"
-                            src="https://github-readme-stats.vercel.app/api/top-langs/?username=oudommunint&hide=css,html,c,freebasic,makefile&hide_border=true&theme=transparent&langs_count=100&layout=compact&card_width=350&text_color=417E87" />
+                            src="https://github-readme-stats.vercel.app/api/top-langs/?username=oudommunint&hide=css,html,c,freebasic,makefile&hide_border=true&theme=transparent&langs_count=100&layout=compact&card_width=350&text_color=417E87"
+                            onLoad={handleImageLoad}/>
                 </a>
                 
               </div>

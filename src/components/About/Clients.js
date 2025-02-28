@@ -21,63 +21,63 @@ function Clients() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={3} className="tech-icons">
-        <SiDotnet />
-        <h3>NET Core & Framework </h3>
+        <SiDotnet className="tech-icon-inner" />
+        <h3 className="tech-label">NET Core & Framework </h3>
       </Col>
 
       <Col xs={4} md={3} className="tech-icons">
-        <SiXamarin />
-        <h3>Xamarin & Maui</h3>
+        <SiXamarin className="tech-icon-inner" />
+        <h3 className="tech-label">Xamarin & Maui</h3>
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
-        <SiCsharp />
-        <h3>C#</h3>
+        <SiCsharp className="tech-icon-inner" />
+        <h3 className="tech-label">C#</h3>
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
-        <h3>React</h3>
+        <DiReact className="tech-icon-inner" />
+        <h3 className="tech-label">React</h3>
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
-        <h3>JavaScript</h3>
+        <DiJavascript1 className="tech-icon-inner" />
+        <h3 className="tech-label">JavaScript</h3>
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
-        <h3>Node.js</h3>
+        <DiNodejs className="tech-icon-inner" />
+        <h3 className="tech-label">Node.js</h3>
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
-        <h3>Git</h3>
+        <DiGit className="tech-icon-inner" />
+        <h3 className="tech-label">Git</h3>
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
-        <SiUnrealengine />
-        <h3>Unreal Engine</h3>
+        <SiUnrealengine className="tech-icon-inner" />
+        <h3 className="tech-label">Unreal Engine</h3>
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
-        <SiUnity />
-        <h3>Unity</h3>
+        <SiUnity className="tech-icon-inner" />
+        <h3 className="tech-label">Unity</h3>
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
-        <DiSqllite />
-        <h3>SQLite</h3>
+        <DiSqllite className="tech-icon-inner" />
+        <h3 className="tech-label">SQLite</h3>
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
-        <DiMysql />
-        <h3>MySQL</h3>
+        <DiMysql className="tech-icon-inner" />
+        <h3 className="tech-label">MySQL</h3>
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
-        <SiGithubactions />
-        <h3>GitHub Actions</h3>
+        <SiGithubactions className="tech-icon-inner" />
+        <h3 className="tech-label">GitHub Actions</h3>
       </Col>
     </Row>
   );
