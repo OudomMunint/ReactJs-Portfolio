@@ -1,56 +1,83 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import pubArt from "../../Assets/publicartworkers.png";
-import nsw from "../../Assets/nsw.svg";
-import local from "../../Assets/local.png";
-import nw from "../../Assets/nw.png";
-import air from "../../Assets/air.png";
-import tina from "../../Assets/tina.png";
-import nag from "../../Assets/nag.png";
-// import { useEffect } from "react";
-// import {
-//   DiJavascript1,
-//   DiReact,
-//   DiNodejs,
-//   DiMongodb,
-//   DiPython,
-//   DiGit,
-// } from "react-icons/di";
-// import {
-//   SiPytorch,
-//   SiFirebase,
-//   SiNextdotjs,
-// } from "react-icons/si";
+import {
+  DiJavascript1,
+  DiReact,
+  DiNodejs,
+  DiGit,
+  DiSqllite,
+  DiMysql,
+} from "react-icons/di";
+import {
+  SiDotnet,
+  SiCsharp,
+  SiXamarin,
+  SiUnrealengine,
+  SiUnity,
+  SiGithubactions,
+} from "react-icons/si";
 
 function Clients() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={pubArt} className="img-fluid" alt="avatar" style={{paddingTop:"25px"}}/>
+      <Col xs={4} md={3} className="tech-icons">
+        <SiDotnet className="tech-icon-inner" />
+        <h3 className="tech-label">NET Core & Framework </h3>
+      </Col>
+
+      <Col xs={4} md={3} className="tech-icons">
+        <SiXamarin className="tech-icon-inner" />
+        <h3 className="tech-label">Xamarin & Maui</h3>
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
-        <img src={nsw} className="img-fluid" alt="avatar"/>
+        <SiCsharp className="tech-icon-inner" />
+        <h3 className="tech-label">C#</h3>
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
-        <img src={local} className="img-fluid" alt="avatar" style={{paddingTop:"5px"}}/>
+        <DiReact className="tech-icon-inner" />
+        <h3 className="tech-label">React</h3>
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
-        <img src={nw} className="img-fluid" alt="avatar" style={{paddingTop:"85px"}}/>
+        <DiJavascript1 className="tech-icon-inner" />
+        <h3 className="tech-label">JavaScript</h3>
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
-        <img src={air} className="img-fluid" alt="avatar"/>
+        <DiNodejs className="tech-icon-inner" />
+        <h3 className="tech-label">Node.js</h3>
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
-        <img src={tina} className="img-fluid" alt="avatar"/>
+        <DiGit className="tech-icon-inner" />
+        <h3 className="tech-label">Git</h3>
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
-        <img src={nag} className="img-fluid" alt="avatar"/>
+        <SiUnrealengine className="tech-icon-inner" />
+        <h3 className="tech-label">Unreal Engine</h3>
+      </Col>
+
+      <Col xs={4} md={2} className="tech-icons">
+        <SiUnity className="tech-icon-inner" />
+        <h3 className="tech-label">Unity</h3>
+      </Col>
+
+      <Col xs={4} md={2} className="tech-icons">
+        <DiSqllite className="tech-icon-inner" />
+        <h3 className="tech-label">SQLite</h3>
+      </Col>
+
+      <Col xs={4} md={2} className="tech-icons">
+        <DiMysql className="tech-icon-inner" />
+        <h3 className="tech-label">MySQL</h3>
+      </Col>
+
+      <Col xs={4} md={2} className="tech-icons">
+        <SiGithubactions className="tech-icon-inner" />
+        <h3 className="tech-label">GitHub Actions</h3>
       </Col>
     </Row>
   );

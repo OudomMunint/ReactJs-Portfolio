@@ -1,16 +1,16 @@
 import React, { useState, useEffect, useCallback } from "react";
-import AlertComponent from "./AlertComponent";
+//import AlertComponent from "./AlertComponent";
 
 function ContactForm() {
   const isDevelopment = process.env.NODE_ENV === "development";
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [animateAlert, setAnimateAlert] = useState(false);
+  //const [animateAlert, setAnimateAlert] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setAnimateAlert(true);
+      //setAnimateAlert(true);
     }, 500);
     return () => clearTimeout(timer);
   }, []);
@@ -63,7 +63,7 @@ function ContactForm() {
       <div className="formFlex">
 
         {/* Alert Message */}
-          <AlertComponent message={
+          {/* <AlertComponent message={
             <>
               This website serves as a showcase of my development work. The source code is hosted on GitHub and deployed via my personal Netlify account.
               Therefore, all emails sent through this form will be directed to me. For inquiries related to
@@ -71,7 +71,7 @@ function ContactForm() {
               <a href="https://www.newcastle.edu.au/profile/simone-ocallaghan"> Dr. Simone O'Callaghan</a>.
             </>
           }
-          animateAlert={animateAlert} />
+          animateAlert={animateAlert} /> */}
 
         {/* Form */}
         <div className="form">

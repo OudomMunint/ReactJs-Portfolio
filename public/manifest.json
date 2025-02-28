@@ -1,9 +1,9 @@
 {
   "short_name": "React App",
-  "name": "Create React App Sample",
+  "name": "React App template",
   "icons": [
     {
-      "src": "art.gif",
+      "src": "react.gif",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "gif/x-icon"
     }

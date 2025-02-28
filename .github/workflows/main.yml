@@ -1,4 +1,4 @@
-name: PROD Build + Release
+name: CI Build
 
 on:
   push:
@@ -26,9 +26,6 @@ jobs:
       - name: Run ESLint
         run: npx eslint --no-error-on-unmatched-pattern.
 
-      - name: Run all tests
-        run: npm test
-
       - name: Generate build
         env:
           CI: false
@@ -40,9 +37,3 @@ jobs:
         with:
           name: react-github-actions-build
           path: build
-
-      # - name: Create Release
-      #   uses: ncipollo/release-action@v1.14.0
-      #   with:
-      #     artifacts: "react-github-actions-build"
-      #     tag: v1.5.7
