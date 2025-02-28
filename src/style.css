@@ -84,9 +84,7 @@ button:focus {
   box-shadow: none !important;
 }
 
-/* --------- */
-/*  Preloader */
-/* --------- */
+
 #preloader {
   position: fixed;
   top: 0;
@@ -109,34 +107,6 @@ button:focus {
   height: 100vh;
 }
 
-/* --------- */
-/*Scrollbar   */
-/* --------- */
-
-::-webkit-scrollbar {
-  width: 7px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #2d1950;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: rgba(178, 121, 216, 0.959);
-  border-radius: 12px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(222, 130, 235, 0.911);
-  border-radius: 12px;
-}
-
-/* --------- */
-/* Navbar Section  */
-/* --------- */
 .sticky {
   background-color: linear-gradient(
     to bottom left,
@@ -243,10 +213,6 @@ a {
   color: white;
 }
 
-/* .nav-link {
-  padding: 0.8rem 1rem !important;
-} */
-
 @media (max-width: 767px) {
   .nav-link {
     padding: 0.7rem 1rem !important;
@@ -281,44 +247,6 @@ a {
 
 .navbar-nav .nav-item a:hover::after {
   width: 100%;
-}
-
-/* --------- */
-/* Home section */
-/* --------- */
-.wave {
-  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
-  animation-duration: 2.1s; /* Change to speed up or slow down */
-  animation-iteration-count: infinite; /* Never stop waving :) */
-  transform-origin: 100%; /* Animate side to side */
-  display: inline-block;
-}
-
-@keyframes wave-animation {
-  0% {
-    transform: rotate(0deg);
-  }
-  10% {
-    transform: rotate(14deg);
-  } /* The following five values can be played with to make the waving more or less extreme */
-  20% {
-    transform: rotate(-8deg);
-  }
-  30% {
-    transform: rotate(14deg);
-  }
-  40% {
-    transform: rotate(-4deg);
-  }
-  50% {
-    transform: rotate(10deg);
-  }
-  60% {
-    transform: rotate(0deg);
-  } /* Reset for the last half to pause */
-  100% {
-    transform: rotate(0deg);
-  }
 }
 
 .home-header {
@@ -384,16 +312,6 @@ a {
   .Typewriter__cursor {
     display: none !important;
   }
-}
-
-.myAvtar {
-  justify-content: center !important;
-  padding-top: 9em !important;
-}
-
-.myAvtar2 {
-  justify-content: center !important;
-  padding-top: 0em !important;
 }
 
 @media (max-width: 767px) {
@@ -485,9 +403,6 @@ a {
   color: #700c86 !important;
 }
 
-/* --------- */
-/* Footer */
-/* --------- */
 .footer {
   background-color: rgb(10, 4, 22);
   bottom: 0% !important;
@@ -529,9 +444,7 @@ a {
 .blockquote-footer {
   color: #a588c0 !important;
 }
-/* --------- */
-/* Projects */
-/* --------- */
+
 .project-section {
   position: relative !important;
   padding-top: 150px !important;
@@ -648,42 +561,6 @@ a {
   }
 }
 
-/* --------- */
-/* About */
-/* --------- */
-
-@media (max-width: 767px) {
-  #carlContainer {
-    background-color: white !important;
-    border-radius: 30px !important;
-    padding: 50px;
-    box-shadow: 2.5px 2.5px 2.5px grey;
-    /* width: 100% !important; */
-  }
-
-  #simoneContainer {
-    background-color: white !important;
-    border-radius: 30px !important;
-    padding: 50px;
-    box-shadow: 2.5px 2.5px 2.5px grey;
-    /* width: 100% !important; */
-  }
-
-  /* Reusable Spacer */
-  #spacer {
-    height: 20px;
-  }
-
-  .img-fluid {
-    min-height: 1px !important;
-  }
-
-  /* shows only one tile when Screen < 767px */
-  .col-md-42 {
-    width: 100% !important;
-  }
-}
-
 @media (min-width: 768px) {
   .col-md-42 {
     flex: 0 0 auto;
@@ -795,37 +672,10 @@ a {
   }
 }
 
-.fork-btn {
-  font-size: 1.1em !important;
-  padding-top: 10px !important;
-}
-
-.fork-btn-inner {
-  line-height: 1.4em !important;
-  background-color: #934cce5e !important;
-  padding: 0.25rem 1.1rem !important;
-  vertical-align: middle !important;
-  text-align: center !important;
-}
-
-.fork-btn-inner:hover {
-  transform: translateY(-2px) !important;
-  background-color: #a24dd386 !important;
-  border-color: #a24dd386 !important;
-}
-
-.fork-btn-inner::after {
-  display: none !important;
-}
-
-/* Contact form */
-
 .formFlex {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* padding-top: 50px;
-  padding-left: 15px; */
   margin-bottom: 118px;
   margin-top: 170px;
   top: 0%;
@@ -1111,17 +961,7 @@ input:checked + .slider {
   margin-top: 2.2rem;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  /* .triggerDiv {
-    font-size: 2rem;
-    letter-spacing: -1.2px;
-    color: #fff;
-    line-height: 1em;
-  }
-  .triggerSpan {
-    font-size: 3rem;
-  } */
-}
+@media screen and (min-width: 768px) and (max-width: 1024px) {}
 
 .icon-colour-normal {
   color: black;

@@ -1,4 +1,3 @@
-/* App partial view styles */
 .App {
   width: 100vw;
   text-align: center;
@@ -49,15 +48,22 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 .ma-2 {
   margin: 0.5rem;
+}
+
+.tech-icon-inner {
+  color: black;
+}
+
+.dark-mode .tech-icon-inner {
+  color: white !important;
+}
+
+.tech-label {
+  color: black;
+}
+
+.dark-mode .tech-label {
+  color: white;
 }
