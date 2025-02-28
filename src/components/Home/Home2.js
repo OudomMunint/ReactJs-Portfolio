@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Student from "../../Assets/home-main.svg"
-import Tilt from "react-parallax-tilt";
 import ScrollTrigger from "../ScrollTrigger";
 import { useMediaQuery } from "react-responsive";
 
