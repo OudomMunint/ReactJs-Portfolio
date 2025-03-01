@@ -70,7 +70,7 @@ button:focus {
   box-shadow: none !important;
 }
 
-#preloader {
+#loader {
   position: fixed;
   top: 0;
   left: 0;
@@ -83,11 +83,11 @@ button:focus {
   background-position: center;
 }
 
-.dark-mode #preloader {
+.dark-mode #loader {
   background-color: rgb(10, 4, 22);
 }
 
-#preloader-none {
+#loader-none {
   opacity: 0;
 }
 

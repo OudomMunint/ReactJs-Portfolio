@@ -6,14 +6,14 @@ import { CgFileDocument } from "react-icons/cg";
 import { AiFillGithub, AiFillLinkedin, } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import Preloader from "../Pre";
+import Loader from "../LoadingScreen";
 
 function Home() {
   const navigate = useNavigate();
   const [load, setLoad] = useState(true); // State for tracking loading
 
   const handleImageLoad = () => {
-    setLoad(false); // Hide preloader when images finish loading
+    setLoad(false); // Hide Loader when images finish loading
   };
   const goToResume = () => {
     navigate("/resume");
@@ -21,7 +21,7 @@ function Home() {
 
   return (
     <section className="HomeHeroSection">
-    <Preloader load={load} /> {/* Show preloader while loading */}
+    <Loader load={load} /> {/* Show Loader while loading */}
       <Container fluid className="home-section" id="home">
         <Container className="home-content">
           <Row>

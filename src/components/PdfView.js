@@ -3,7 +3,7 @@ import resume from "../Assets/resume2025.pdf";
 import { Button } from "react-bootstrap";
 import { CgSoftwareDownload } from "react-icons/cg";
 import { useState } from "react";
-import Preloader from "./Pre";
+import Loader from "./LoadingScreen";
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 import 'react-pdf/dist/Page/TextLayer.css';
 
@@ -14,7 +14,7 @@ function PdfView() {
 
   return (
     <div className="resume-container">
-      <Preloader load={load} />
+      <Loader load={load} />
 
       <Document className="pdfdoc"
                 file={resume}
