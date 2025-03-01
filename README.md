@@ -7,11 +7,18 @@
 
 <br/>
 
+![gif](/Media/maingif.gif)
+
 ### Maintenance:
 ![maintenance-status](https://img.shields.io/badge/maintenance-actively--developed-brightgreen.svg)
 
-### Pipelines:
-To be added.
+### CI Pipeline:
+[![CI Build](https://github.com/OudomMunint/ReactJs-Portfolio/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/OudomMunint/ReactJs-Portfolio/actions/workflows/main.yml)
+
+### Production Deployment: <a href="https://oudommunint.netlify.app/" target="_blank">Go to website</a>
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0260a7f6-2b1b-4b6f-8e7e-69995eb35ce5/deploy-status)](https://app.netlify.com/sites/oudommunint/deploys)
+
+
 
 ## Tech Stack
 This project was built using these technologies.
