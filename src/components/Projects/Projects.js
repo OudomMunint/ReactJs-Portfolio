@@ -27,8 +27,8 @@ function Projects() {
                            memory, and IO. It tests integer performance (prime computation), floating-point (matrix multiplication),
                            cryptographic (AES & hashing), memory (16GB dataset encryption), and multithreading.
                            Results can be exported to a text file"
-              // ghLink="https://github.com/OudomMunint/Benchmark"
-              demoLink="https://github.com/OudomMunint/Benchmark"
+              // sourceLink="https://github.com/OudomMunint/Benchmark"
+              sourceLink="https://github.com/OudomMunint/Benchmark"
             />
           </Col>
 
@@ -39,7 +39,7 @@ function Projects() {
               description="A minimalistic, performant, cross platform .NET MAUI application that performs CRUD operations and stores data locally
                           with SQLite. This app features optional biometric authentication, a dashboard view with charts, camera & image gallery usage,
                           ListView with bulk actions as well as dark & light themes."
-              demoLink="https://github.com/OudomMunint/.NetMAUI-To-Do-List-App"
+              sourceLink="https://github.com/OudomMunint/.NetMAUI-To-Do-List-App"
             />
           </Col>
 
@@ -49,8 +49,8 @@ function Projects() {
               title="Studio Zed SPA website"
               description="A React SPA template designed & developed for a design studio called Studio Zed. Feel free to contribute or use this for your
                            own needs, this template is the base for the website you are currently viewing!"   
-              demoLink="https://studiozed.netlify.app/"
-              ghLink="https://github.com/OudomMunint/StudioZed-ReactJS"    
+              visitLink="https://studiozed.netlify.app/"
+              sourceLink="https://github.com/OudomMunint/StudioZed-ReactJS"    
             />
           </Col>
 
@@ -62,7 +62,7 @@ function Projects() {
                            Feel free to use it as a template for your own projects. This project features AI bots using Unreal's Perception system,
                            a health system for both player & AI, a weapon system with shoulder switching aiming & reloading,
                            a standard movement system, a scoring system with win/loss conditions and a robust menu system & HUDs."
-              demoLink="https://github.com/OudomMunint/Unreal-3rd-person-shooter-4.27"
+              sourceLink="https://github.com/OudomMunint/Unreal-3rd-person-shooter-4.27"
             />
           </Col>
 
@@ -73,8 +73,7 @@ function Projects() {
               description="A fun, responsive website made with HTML, JavaScript, bootstrap, SCSS and .JS libraries such as Scroll trigger, Scroll magic, GSAP.
                            This website is a template created for my personal portfolio, It is the original website you are currently
                            viewing before being ported to React. feel free to use it for your own needs!"
-              demoLink="https://oudommunint.netlify.app/"
-              ghLink="https://github.com/OudomMunint/Personal-Website"
+              visitLink="https://oldportfoliodom.netlify.app/"
             />
           </Col>
 
@@ -85,7 +84,7 @@ function Projects() {
               description="A 2D platformer game made in Unity with C# & .Net Framework 2.1. A short platformer game featuring 5 Levels with collectables,
                            hazards, health system, checkpoints, a scoring system and proper win/loss conditions.
                            Feel free to use it as a template or starting point."
-              demoLink="https://github.com/OudomMunint/Unity-2D-Platformer"
+              sourceLink="https://github.com/OudomMunint/Unity-2D-Platformer"
             />
           </Col>
 

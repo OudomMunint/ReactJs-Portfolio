@@ -1,5 +1,5 @@
 import { Document, pdfjs, Page } from "react-pdf";
-import resume from "../Assets/resume.pdf";
+import resume from "../Assets/resume2025.pdf";
 import { Button } from "react-bootstrap";
 import { CgSoftwareDownload } from "react-icons/cg";
 import { useState } from "react";
@@ -21,6 +21,7 @@ function PdfView() {
                 onLoadSuccess={() => updateLoad(false)}
                 onLoadError={(error) => { console.error("PDF Load Error:", error); updateLoad(false);}}>
         <Page pageNumber={1} />
+        <Page pageNumber={2} />
       </Document>
 
       <Button variant="primary flex"
@@ -46,6 +47,12 @@ function PdfView() {
 
           div.react-pdf__Page__annotations.annotationLayer {
             display: none !important;
+          }
+
+          @media screen and (max-width: 768px) {
+            .resume-container {
+              justify-content: stretch;
+            }
           }
         `}
       </style>
