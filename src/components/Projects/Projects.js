@@ -9,6 +9,7 @@ import ogPortfolio from "../../Assets/ogwebsite.png"
 import unityPlatformer from "../../Assets/unity2d.png"
 
 function Projects() {
+  const reactPortfolio = "https://raw.githubusercontent.com/OudomMunint/ReactJs-Portfolio/main/Media/maingif.gif";
   return (
     <Container fluid className="project-section">
       <Container>
@@ -85,6 +86,16 @@ function Projects() {
                            hazards, health system, checkpoints, a scoring system and proper win/loss conditions.
                            Feel free to use it as a template or starting point."
               sourceLink="https://github.com/OudomMunint/Unity-2D-Platformer"
+            />
+          </Col>
+
+          <Col md={42} className="project-card">
+            <ProjectCard
+              imgPath={reactPortfolio}
+              title="React Portfolio SPA"
+              description="The website you are currently viewing! feel free to use it as a template for your own portfolio."
+              sourceLink="https://github.com/OudomMunint/ReactJs-Portfolio"
+              visitLink="https://oudommunint.netlify.app/"
             />
           </Col>
 
