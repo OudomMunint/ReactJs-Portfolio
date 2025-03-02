@@ -674,20 +674,6 @@ a {
   height: 100px;
 }
 
-::-webkit-scrollbar {
-  width: 5px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #0d0d0d;
-}
-
 textarea {
   resize: none !important;
 }
@@ -800,10 +786,4 @@ input:checked + .slider {
 .icon-colour-normal:hover {
   color: #08d;
   transform: scale(1.1);
-}
-
-@media screen and (max-width: 768px) {
-  .github-stats {
-    width: 100% !important;
-  }
 }
