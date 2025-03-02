@@ -5,7 +5,7 @@ import ScrollTrigger from "../ScrollTrigger";
 import { useMediaQuery } from "react-responsive";
 
 function Home2() {
-  const isLargeScreen = useMediaQuery({ query: "(min-width: 768px)" });
+  const isLargeScreen = useMediaQuery({ query: "(min-width: 1200px)" });
   
   return (
     <Container fluid className="home-about-section" id="about">
@@ -19,8 +19,7 @@ function Home2() {
                   fontSize: "2.2em",
                   width: "500px",
                   textAlign: "left",
-                }}
-              >
+                }}>
                 I am an experienced software engineer based in{" "}
                 <span className="purple"> Newcastle, </span> New South Wales Australia.
               </h1>
@@ -30,8 +29,7 @@ function Home2() {
                   width: "500px",
                   textAlign: "left",
                   fontSize: "2.2em",
-                }}
-              >
+                }}>
                 <br />
                 <br />
                 A graduate from the University of Newcastle, I have a passion for

@@ -6,16 +6,18 @@ import { Container } from "react-bootstrap";
 function About() {
   return (
     <section>
-    <Container fluid className="about-section">
-      <Container>
-        <Home2/>
+      <Container fluid className="about-section">
+        <Container>
+
+          <Home2 />
+
           <h1 className="project-heading">
             Technologies I've <strong className="purple">worked with </strong>
           </h1>
-
-        <Clients />
+          <Clients />
+          
+        </Container>
       </Container>
-    </Container>
     </section>
   );
 }

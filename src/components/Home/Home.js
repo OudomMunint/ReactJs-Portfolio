@@ -10,10 +10,10 @@ import Loader from "../LoadingScreen";
 
 function Home() {
   const navigate = useNavigate();
-  const [load, setLoad] = useState(true); // State for tracking loading
+  const [load, setLoad] = useState(true);
 
   const handleImageLoad = () => {
-    setLoad(false); // Hide Loader when images finish loading
+    setLoad(false);
   };
   const goToResume = () => {
     navigate("/resume");
@@ -66,23 +66,33 @@ function Home() {
 
 
             <Col className="home-header" md={7} style={{ padding: 20 }}>
-
               <Github onLoad={handleImageLoad}/>
-
-              <div style={{display:"flex", alignItems:"center"}}> 
-                <a className="ma-2" href="https://github.com/anuraghazra/github-readme-stats">
-                  <img align="center" alt="Oudom's Github Stats" className="github-stats"
-                       src="https://github-readme-stats.vercel.app/api?username=oudommunint&show_icons=true&theme=transparent&hide_border=true&include_all_commits=false&rank_icon=percentile%&show=reviews,prs_merged,prs_merged_percentage&hide=contribs"
-                       onLoad={handleImageLoad}/>
-                </a>
-
-                <a className="ma-2" href="https://github.com/anuraghazra/convoychat">
-                  <img text-align="center" alt="Oudom's Top Languages" className="github-stats"
-                            src="https://github-readme-stats.vercel.app/api/top-langs/?username=oudommunint&hide=css,html,c,freebasic,makefile&hide_border=true&theme=transparent&langs_count=100&layout=compact&card_width=350&text_color=417E87"
-                            onLoad={handleImageLoad}/>
-                </a>
-                
-              </div>
+              <Row className="gx-0">
+                <Col md={7} sm={12} className="col-12 mb-3">
+                  <a className="ma-2" href="https://github.com/anuraghazra/github-readme-stats">
+                    <img align="center" alt="Oudom's Github Stats" className="github-stats w-100"
+                      src="https://github-readme-stats.vercel.app/api?username=oudommunint&show_icons=true&theme=transparent&hide_border=true&include_all_commits=false&rank_icon=percentile%&show=reviews,prs_merged,prs_merged_percentage&hide=contribs"
+                      onLoad={handleImageLoad} />
+                  </a>
+                </Col>
+                <Col md={5} sm={12} className="col-12">
+                  <a className="ma-2" href="https://github.com/anuraghazra/convoychat">
+                    <img text-align="center" alt="Oudom's Top Languages" className="github-stats w-115"
+                      src="https://github-readme-stats.vercel.app/api/top-langs/?username=oudommunint&hide=css,html,c,freebasic,makefile&hide_border=true&theme=transparent&langs_count=100&layout=compact&card_width=350&text_color=417E87"
+                      onLoad={handleImageLoad} />
+                  </a>
+                </Col>
+                <style>{`
+                  .w-115 {
+                    width: 115%;
+                  }
+                  @media screen and (max-width: 768px) {
+                    .w-115 {
+                      width: 90%;
+                    }
+                  }
+                `}</style>
+              </Row>
             </Col>
           </Row>
         </Container>
