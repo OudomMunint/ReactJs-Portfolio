@@ -35,7 +35,7 @@ function ScrollTrigger() {
       // threshold: 0.7,
       // rootMargin: "-50px",
       threshold: isTablet ? 0.5 : 1,
-      rootMargin: isTablet ? "-200px" : "-150px",
+      rootMargin: isTablet ? "-200px" : "-190px",
     });
 
     if (isDevelopment) { console.log(observer.thresholds, observer.rootMargin) }
@@ -58,7 +58,7 @@ function ScrollTrigger() {
           <div className="triggerDiv" tg-name="_" tg-ref="container" tg-from="1" tg-to="8" tg-step="1">
             <section tg-name="_" tg-map="1,2,3,4,5,6,7,8,9,10: 1">
               <span className="triggerSpan" tg-name="opacity" tg-filter="2!" tg-follow="container">
-              I am an experienced software engineer based in Newcastle, New South Wales Australia.
+              I'm an experienced software engineer based in Newcastle, New South Wales Australia.
               </span>
               <br />
               <span className="triggerSpan" tg-name="opacity" tg-filter="3!" tg-follow="container">
