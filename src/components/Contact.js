@@ -6,14 +6,14 @@ function ContactForm() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  //const [animateAlert, setAnimateAlert] = useState(false);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      //setAnimateAlert(true);
-    }, 500);
-    return () => clearTimeout(timer);
-  }, []);
+  // const [animateAlert, setAnimateAlert] = useState(false);
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setAnimateAlert(true);
+  //   }, 500);
+  //   return () => clearTimeout(timer);
+  // }, []);
 
   const handleSubmit = useCallback(
     async (event) => {
