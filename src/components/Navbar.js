@@ -27,12 +27,8 @@ function NavBar() {
   window.addEventListener("scroll", scrollHandler);
 
   return (
-    <Navbar
-      expanded={expand}
-      fixed="top"
-      expand="md"
-      className={navColour ? "sticky" : "navbar"}
-    >
+    <Navbar expanded={expand} fixed="top" expand="md"
+            className={navColour ? "sticky" : "navbar"}>
       <Container>
         <Navbar.Brand href="/" className="d-flex">
         <DarkModeToggle />
@@ -41,13 +37,12 @@ function NavBar() {
           aria-controls="responsive-navbar-nav"
           onClick={() => {
             updateExpanded(expand ? false : "expanded");
-          }}
-        >
+          }}>
           <span></span>
           <span></span>
           <span></span>
         </Navbar.Toggle>
-        <Navbar.Collapse id="responsive-navbar-nav" className="blur">
+        <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
@@ -59,8 +54,7 @@ function NavBar() {
               <Nav.Link
                 as={Link}
                 to="/about"
-                onClick={() => updateExpanded(false)}
-              >
+                onClick={() => updateExpanded(false)}>
                 <AiOutlineUser style={{ marginBottom: "2px" }} /> About
               </Nav.Link>
             </Nav.Item>
@@ -69,8 +63,7 @@ function NavBar() {
               <Nav.Link
                 as={Link}
                 to="/project"
-                onClick={() => updateExpanded(false)}
-              >
+                onClick={() => updateExpanded(false)}>
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
                 />{" "}
@@ -82,14 +75,29 @@ function NavBar() {
               <Nav.Link
                 as={Link}
                 to="/Contact"
-                onClick={() => updateExpanded(false)}
-              >
+                onClick={() => updateExpanded(false)}>
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Contact
               </Nav.Link>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>
       </Container>
+
+      <style>
+        {`@media (max-width: 768px) {
+            .navbar {
+                -webkit-backdrop-filter: blur(15px) !important;
+                backdrop-filter: blur(15px) !important;
+                background-color: transparent !important;
+                font-size: 1.4rem !important;
+                padding: 1rem 2rem !important;
+            }
+            .dark-mode .navbar {
+              background-color: rgb(24, 26, 39, 0.5) !important;
+            }
+          }`}
+      </style>
+
     </Navbar>
   );
 }

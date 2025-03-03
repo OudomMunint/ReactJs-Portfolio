@@ -9,6 +9,15 @@ import ogPortfolio from "../../Assets/ogwebsite.png"
 import unityPlatformer from "../../Assets/unity2d.png"
 
 function Projects() {
+  const reactPortfolio = "https://raw.githubusercontent.com/OudomMunint/ReactJs-Portfolio/main/Media/maingif.gif";
+  const tpsunreal2 = "https://raw.githubusercontent.com/OudomMunint/Unreal-3rd-person-shooter-4.27/refs/heads/main/img3.png";
+  const tpsUnreal3 = "https://raw.githubusercontent.com/OudomMunint/Unreal-3rd-person-shooter-4.27/refs/heads/main/tps.png";
+  const tpsUnreal4 = "https://raw.githubusercontent.com/OudomMunint/Unreal-3rd-person-shooter-4.27/refs/heads/main/img1.png";
+
+  const benchmark2 = "https://raw.githubusercontent.com/OudomMunint/Benchmark/refs/heads/master/Media/win11.png";
+  const benchmark3 = "https://raw.githubusercontent.com/OudomMunint/Benchmark/refs/heads/master/Media/macos.png";
+  const benchmark4 = "https://raw.githubusercontent.com/OudomMunint/Benchmark/refs/heads/master/Media/macos_results.png";
+
   return (
     <Container fluid className="project-section">
       <Container>
@@ -21,13 +30,16 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={42} className="project-card">
             <ProjectCard
-              imgPath={benchmark}
+              hasMultipleImages = {true}
+              imgPath1={benchmark}
+              imgPath2={benchmark2}
+              imgPath3={benchmark3}
+              imgPath4={benchmark4}
               title="Hardware Info & Performance Benchmark"
               description="A .NET Core 9.0 C# console app that displays system specs and runs performance benchmarks for CPU,
                            memory, and IO. It tests integer performance (prime computation), floating-point (matrix multiplication),
                            cryptographic (AES & hashing), memory (16GB dataset encryption), and multithreading.
                            Results can be exported to a text file"
-              // sourceLink="https://github.com/OudomMunint/Benchmark"
               sourceLink="https://github.com/OudomMunint/Benchmark"
             />
           </Col>
@@ -56,7 +68,11 @@ function Projects() {
 
           <Col md={42} className="project-card">
             <ProjectCard
-              imgPath={tpsUnreal}
+              hasMultipleImages = {true}
+              imgPath1={tpsUnreal}
+              imgPath2={tpsunreal2}
+              imgPath3={tpsUnreal3}
+              imgPath4={tpsUnreal4}
               title="UE5 third person shooter (still thinking of a name lol)"
               description="A 3rd person shooter, this was a solo university assignment in Games design and development.
                            Feel free to use it as a template for your own projects. This project features AI bots using Unreal's Perception system,
@@ -85,6 +101,16 @@ function Projects() {
                            hazards, health system, checkpoints, a scoring system and proper win/loss conditions.
                            Feel free to use it as a template or starting point."
               sourceLink="https://github.com/OudomMunint/Unity-2D-Platformer"
+            />
+          </Col>
+
+          <Col md={42} className="project-card">
+            <ProjectCard
+              imgPath={reactPortfolio}
+              title="React Portfolio SPA"
+              description="The website you are currently viewing! feel free to use it as a template for your own portfolio."
+              sourceLink="https://github.com/OudomMunint/ReactJs-Portfolio"
+              visitLink="https://oudommunint.netlify.app/"
             />
           </Col>
 

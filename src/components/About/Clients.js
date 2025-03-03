@@ -15,6 +15,7 @@ import {
   SiUnrealengine,
   SiUnity,
   SiGithubactions,
+  SiAzuredevops
 } from "react-icons/si";
 
 function Clients() {
@@ -43,6 +44,11 @@ function Clients() {
       <Col xs={4} md={2} className="tech-icons">
         <DiJavascript1 className="tech-icon-inner" />
         <h3 className="tech-label">JavaScript</h3>
+      </Col>
+
+      <Col xs={4} md={2} className="tech-icons">
+        <SiAzuredevops className="tech-icon-inner" />
+        <h3 className="tech-label">Azure Devops</h3>
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">

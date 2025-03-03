@@ -4,7 +4,7 @@ body {
 }
 
 .dark-mode body {
-  background-color: rgb(10, 4, 22);
+  background-color: rgb(10, 4, 22) !important;
 }
 
 :root {

@@ -6,7 +6,6 @@ import Projects from "./components/Projects/Projects";
 import ContactForm from "./components/Contact";
 import PdfView from "./components/PdfView";
 import ScrollToTop from "./components/ScrollToTop";
-import Footer from "./components/Footer";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -16,6 +15,7 @@ import {
   Routes,
   Navigate
 } from "react-router-dom";
+// import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -31,7 +31,7 @@ function App() {
           <Route path="/resume" element={<PdfView />} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </Router>
   );
