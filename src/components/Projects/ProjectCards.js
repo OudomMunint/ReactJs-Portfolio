@@ -2,6 +2,7 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgArrowRight } from "react-icons/cg";
+import Carousel from "react-bootstrap/Carousel";
 
 function ProjectCards(props) {
 
