@@ -70,27 +70,6 @@ button:focus {
   box-shadow: none !important;
 }
 
-#loader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 999999;
-  background-color: rgb(205 205 205);
-  background-image: url(./Assets/tube-spinner.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.dark-mode #loader {
-  background-color: rgb(10, 4, 22);
-}
-
-#loader-none {
-  opacity: 0;
-}
-
 #no-scroll {
   overflow: hidden;
   height: 100vh;
