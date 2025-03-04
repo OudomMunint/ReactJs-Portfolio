@@ -4,8 +4,6 @@ import { Button } from "react-bootstrap";
 import { CgSoftwareDownload } from "react-icons/cg";
 import { useState } from "react";
 import Loader from "./LoadingScreen";
-import 'react-pdf/dist/Page/AnnotationLayer.css';
-import 'react-pdf/dist/Page/TextLayer.css';
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/legacy/build/pdf.worker.min.js`;
 
@@ -20,8 +18,8 @@ function PdfView() {
                 file={resume}
                 onLoadSuccess={() => updateLoad(false)}
                 onLoadError={(error) => { console.error("PDF Load Error:", error); updateLoad(false);}}>
-        <Page pageNumber={1} />
-        <Page pageNumber={2} />
+        <Page pageNumber={1} renderAnnotationLayer={false} renderTextLayer={false} />
+        <Page pageNumber={2} renderAnnotationLayer={false} renderTextLayer={false} />
       </Document>
 
       <Button variant="primary flex"
@@ -41,13 +39,13 @@ function PdfView() {
             overflow-y: auto;
           }
 
-          div.react-pdf__Page__textContent.textLayer {
+          {/* div.react-pdf__Page__textContent.textLayer {
             display: none !important;
           }
 
           div.react-pdf__Page__annotations.annotationLayer {
             display: none !important;
-          }
+          } */}
 
           @media screen and (max-width: 768px) {
             .resume-container {
