@@ -49,7 +49,7 @@ function Home() {
 
                   <li className="social-icons">
                     <a href="https://www.linkedin.com/in/oudom-munint/" className="icon-colour-normal"
-                      rel="noopener noreferrer" data-toggle="tooltip" data-placement="top" title="LinkedIn">
+                      target="_blank" rel="noopener noreferrer" data-toggle="tooltip" data-placement="top" title="LinkedIn">
                       <AiFillLinkedin size={50} className="icon-colour-normal" />
                     </a>
                   </li>
@@ -63,7 +63,6 @@ function Home() {
                 </ul>
               </div>
             </Col>
-
 
             <Col className="home-header" md={7} style={{ padding: 20 }}>
               <Github onLoad={handleImageLoad}/>
@@ -83,14 +82,14 @@ function Home() {
                   </a>
                 </Col>
                 <style>{`
-                  .w-115 {
-                    width: 115%;
-                  }
-                  @media screen and (max-width: 768px) {
                     .w-115 {
-                      width: 90%;
+                      width: 115%;
                     }
-                  }
+                    @media screen and (max-width: 768px) {
+                      .w-115 {
+                        width: 90%;
+                      }
+                    }
                 `}</style>
               </Row>
             </Col>
