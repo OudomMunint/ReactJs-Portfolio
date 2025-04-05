@@ -4,16 +4,15 @@ import ProjectCard from "./ProjectCards";
 import benchmark from "../../Assets/benchmark.png"
 import maui from "../../Assets/maui.png"
 import studioZed from "../../Assets/studiozed.png"
-import tpsUnreal from "../../Assets/tps.png"
 import ogPortfolio from "../../Assets/ogwebsite.png"
 import unityPlatformer from "../../Assets/unity2d.png"
+import tpsUnreal from "../../Assets/tps.png"
+import tpsunreal2 from "../../Assets/tps2.png"
+import tpsUnreal3 from "../../Assets/tps3.png"
+import tpsUnreal4 from "../../Assets/tps4.png"
 
 function Projects() {
   const reactPortfolio = "https://raw.githubusercontent.com/OudomMunint/ReactJs-Portfolio/main/Media/maingif.gif";
-  const tpsunreal2 = "https://raw.githubusercontent.com/OudomMunint/Unreal-3rd-person-shooter-4.27/refs/heads/main/img3.png";
-  const tpsUnreal3 = "https://raw.githubusercontent.com/OudomMunint/Unreal-3rd-person-shooter-4.27/refs/heads/main/tps.png";
-  const tpsUnreal4 = "https://raw.githubusercontent.com/OudomMunint/Unreal-3rd-person-shooter-4.27/refs/heads/main/img1.png";
-
   const benchmark2 = "https://raw.githubusercontent.com/OudomMunint/Benchmark/refs/heads/master/Media/win11.png";
   const benchmark3 = "https://raw.githubusercontent.com/OudomMunint/Benchmark/refs/heads/master/Media/macos.png";
   const benchmark4 = "https://raw.githubusercontent.com/OudomMunint/Benchmark/refs/heads/master/Media/macos_results.png";
