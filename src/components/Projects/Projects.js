@@ -1,23 +1,21 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
-import benchmark from "../../Assets/benchmark.png"
 import maui from "../../Assets/maui.png"
 import studioZed from "../../Assets/studiozed.png"
-import tpsUnreal from "../../Assets/tps.png"
 import ogPortfolio from "../../Assets/ogwebsite.png"
 import unityPlatformer from "../../Assets/unity2d.png"
+import tpsUnreal from "../../Assets/tps.png"
+import tpsunreal2 from "../../Assets/tps2.png"
+import tpsUnreal3 from "../../Assets/tps3.png"
+import tpsUnreal4 from "../../Assets/tps4.png"
+import benchmark2 from "../../Assets/macos.png"
+import benchmark3 from "../../Assets/macos_results.png"
+import benchmark4 from "../../Assets/win11.png"
+import benchmark from "../../Assets/macos_output.png"
+import reactPortfolio from "../../Assets/maingif.gif"
 
 function Projects() {
-  const reactPortfolio = "https://raw.githubusercontent.com/OudomMunint/ReactJs-Portfolio/main/Media/maingif.gif";
-  const tpsunreal2 = "https://raw.githubusercontent.com/OudomMunint/Unreal-3rd-person-shooter-4.27/refs/heads/main/img3.png";
-  const tpsUnreal3 = "https://raw.githubusercontent.com/OudomMunint/Unreal-3rd-person-shooter-4.27/refs/heads/main/tps.png";
-  const tpsUnreal4 = "https://raw.githubusercontent.com/OudomMunint/Unreal-3rd-person-shooter-4.27/refs/heads/main/img1.png";
-
-  const benchmark2 = "https://raw.githubusercontent.com/OudomMunint/Benchmark/refs/heads/master/Media/win11.png";
-  const benchmark3 = "https://raw.githubusercontent.com/OudomMunint/Benchmark/refs/heads/master/Media/macos.png";
-  const benchmark4 = "https://raw.githubusercontent.com/OudomMunint/Benchmark/refs/heads/master/Media/macos_results.png";
-
   return (
     <Container fluid className="project-section">
       <Container>
@@ -31,10 +29,10 @@ function Projects() {
           <Col md={42} className="project-card">
             <ProjectCard
               hasMultipleImages = {true}
-              imgPath1={benchmark}
+              imgPath1={benchmark3}
               imgPath2={benchmark2}
-              imgPath3={benchmark3}
-              imgPath4={benchmark4}
+              imgPath3={benchmark4}
+              imgPath4={benchmark}
               title="Hardware Info & Performance Benchmark"
               description="A .NET Core 9.0 C# console app that displays system specs and runs performance benchmarks for CPU,
                            memory, and IO. It tests integer performance (prime computation), floating-point (matrix multiplication),
@@ -69,8 +67,8 @@ function Projects() {
           <Col md={42} className="project-card">
             <ProjectCard
               hasMultipleImages = {true}
-              imgPath1={tpsUnreal}
-              imgPath2={tpsunreal2}
+              imgPath1={tpsunreal2}
+              imgPath2={tpsUnreal}
               imgPath3={tpsUnreal3}
               imgPath4={tpsUnreal4}
               title="UE5 third person shooter (still thinking of a name lol)"
