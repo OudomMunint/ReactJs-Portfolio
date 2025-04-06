@@ -1,5 +1,5 @@
 <h2 align="center">
-  This is my personal website made with React Js based on the tamplate I created for the <a href="https://studiozed.netlify.app/" target="_blank">Studio Zed website.</a><br/>
+  This is my personal website made with React Js based on the template I created for the <a href="https://studiozed.netlify.app/" target="_blank">Studio Zed website.</a><br/>
   Feel free to use it as a template for your own projects!<br/>
   
   [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
