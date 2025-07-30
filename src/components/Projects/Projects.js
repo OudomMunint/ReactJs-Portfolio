@@ -14,8 +14,8 @@ import benchmark3 from "../../Assets/macos_results.png"
 import benchmark4 from "../../Assets/win11.png"
 import benchmark from "../../Assets/macos_output.png"
 import reactPortfolio from "../../Assets/maingif.gif"
-import bench1 from "../../Assets/benchmark.png";
-import bench2 from "../../Assets/benchscreen.png";
+import bench1 from "../../Assets/benchscreen.png";
+import bench2 from "../../Assets/system.png";
 import bench3 from "../../Assets/resultScreen.png";
 
 function Projects() {
@@ -69,6 +69,7 @@ function Projects() {
 
           <Col md={42} className="project-card">
             <ProjectCard
+              hasMultipleImages = {true}
               imgPath={bench1}
               imgPath1={bench2}
               imgPath2={bench3}
