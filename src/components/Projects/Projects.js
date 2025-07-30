@@ -14,6 +14,9 @@ import benchmark3 from "../../Assets/macos_results.png"
 import benchmark4 from "../../Assets/win11.png"
 import benchmark from "../../Assets/macos_output.png"
 import reactPortfolio from "../../Assets/maingif.gif"
+import bench1 from "../../Assets/benchmark.png";
+import bench2 from "../../Assets/benchscreen.png";
+import bench3 from "../../Assets/resultScreen.png";
 
 function Projects() {
   return (
@@ -61,6 +64,17 @@ function Projects() {
                            own needs, this template is the base for the website you are currently viewing!"   
               visitLink="https://studiozed.netlify.app/"
               sourceLink="https://github.com/OudomMunint/StudioZed-ReactJS"    
+            />
+          </Col>
+
+          <Col md={42} className="project-card">
+            <ProjectCard
+              imgPath={bench1}
+              imgPath1={bench2}
+              imgPath2={bench3}
+              title=".NET MAUI Benchmark"
+              description="A .NET MAUI port of https://github.com/OudomMunint/Benchmark it supports most of the same features as the console app, but with a user interface!"
+              sourceLink="https://github.com/OudomMunint/MauiBench"    
             />
           </Col>
 
