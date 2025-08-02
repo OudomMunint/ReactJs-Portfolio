@@ -1,4 +1,3 @@
-import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import maui from "../../Assets/maui.png"
@@ -70,11 +69,19 @@ function Projects() {
           <Col md={42} className="project-card">
             <ProjectCard
               hasMultipleImages = {true}
-              imgPath={bench1}
-              imgPath1={bench2}
-              imgPath2={bench3}
+              imgPath1={bench1}
+              imgPath2={bench2}
+              imgPath3={bench3}
               title=".NET MAUI Benchmark"
-              description="A .NET MAUI port of https://github.com/OudomMunint/Benchmark it supports most of the same features as the console app, but with a user interface!"
+              description={
+                <>
+                  A .NET MAUI port of&nbsp;
+                  <a href="https://github.com/OudomMunint/Benchmark" target="_blank" rel="noopener noreferrer">
+                    Hardware Info & Performance Benchmark
+                  </a>
+                  &nbsp;it supports most of the same features as the console app, but with a user interface!
+                </>
+              }
               sourceLink="https://github.com/OudomMunint/MauiBench"    
             />
           </Col>
